@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+    <h1>Реєстрація на онлайн-курс</h1>
+    <form>
+        <p>Ім'я та прізвище:*</p>
+        <input type="text" name="fullname" required>
+        <p>Електронна пошта:*</p>
+        <input type="email" name="email" required>
+        <p>Номер телефону:</p>
+        <input type="tel" name="phone">
+        <p>Вік (14-70 років):</p>
+        <input type="number" name="age" min="14" max="70">
+        <p>Дата народження:</p>
+        <input type="date" name="dob">
+        <p>Пароль (від 8 символів):</p>
+        <input type="password" name="password" minlength="8">
+        <p>Повторіть пароль:</p>
+        <input type="password" name="confirm_password" minlength="8">
+        <p>Рівень підготовки:*</p>
+        <input type="radio" name="level" value="1" required> Початковий<br>
+        <input type="radio" name="level" value="2"> Середній<br>
+        <input type="radio" name="level" value="3"> Високий<br>
+        <p>Теми, які цікавлять:</p>
+        <input type="checkbox" name="topic" value="html"> HTML<br>
+        <input type="checkbox" name="topic" value="css"> CSS<br>
+        <input type="checkbox" name="topic" value="js"> JavaScript<br>
+        <input type="checkbox" name="topic" value="angular"> Angular<br>
+        <p>Формат навчання:</p>
+        <select name="format">
+            <option>Онлайн</option>
+            <option>Очно</option>
+            <option>Змішаний формат</option>
+        </select>
+        <p>Чому ви хочете пройти цей курс? (до 300 символів):</p>
+        <textarea name="motivation" maxlength="300" rows="4" cols="30"></textarea>
+        <br><br>
+        <input type="submit" value="Надіслати">
+        <input type="reset" value="Очистити">
+    </form>
+</body>
+
+</html>
