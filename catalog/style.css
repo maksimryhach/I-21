@@ -1,0 +1,68 @@
+
+body {
+    background: #eeeeee;
+    font-family: Arial;
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 25px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #cccccc;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: blue;
+}
+
+.card h4 {
+    color: blue;
+}
+
+.card button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: darkblue;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .catalog {
+        flex-direction: column;
+        align-items: center;
+    }
+}
